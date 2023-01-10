@@ -1,0 +1,6 @@
+@input(['name' => 'name', 'label' => __('static-block::static-block.name')])
+@slug(['name' => 'slug', 'label' => __('static-block::static-block.slug'), 'field_slug' => 'name'])
+@ckeditor(['name' => 'content', 'label' => __('static-block::static-block.content')])
+@input(['name' => 'css', 'label' => __('static-block::static-block.css')])
+@input(['name' => 'script', 'label' => __('static-block::static-block.js')])
+@checkbox(['name' => 'is_active', 'label' => '' , 'default' => true, 'placeholder' => __('static-block::static-block.is_active')])

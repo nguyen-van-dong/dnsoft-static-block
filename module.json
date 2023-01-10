@@ -1,0 +1,8 @@
+{
+    "name": "StaticBlock",
+    "description": "StaticBlock",
+    "namespace": "Module\\StaticBlock\\",
+    "providers": [
+        "Module\\StaticBlock\\StaticBlockServiceProvider"
+    ]
+}

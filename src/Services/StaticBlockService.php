@@ -1,4 +1,5 @@
 <?php
+
 namespace Module\StaticBlock\Services;
 
 use Module\StaticBlock\Models\StaticBlock;

@@ -23,14 +23,16 @@ class StaticBlockController extends Controller
     public function index(Request $request)
     {
         $items = $this->staticBlockRepository->paginate($request->input('max', 20));
-        return view('static-block::admin.index', compact('items'));
+        $version = get_version_actived();
+        return view("static-block::$version.admin.index", compact('items'));
     }
 
     public function create()
     {
         \MenuAdmin::activeMenu('static_block_root');
         $item = [];
-        return view('static-block::admin.create', compact('item'));
+        $version = get_version_actived();
+        return view("static-block::$version.admin.create", compact('item'));
     }
 
     public function store(StaticBlockRequest $request)
@@ -52,8 +54,8 @@ class StaticBlockController extends Controller
     {
         \MenuAdmin::activeMenu('static_block_root');
         $item = $this->staticBlockRepository->find($id);
-
-        return view('static-block::admin.edit', compact('item'));
+        $version = get_version_actived();
+        return view("static-block::$version.admin.edit", compact('item'));
     }
 
     public function update(StaticBlockRequest $request, $id)

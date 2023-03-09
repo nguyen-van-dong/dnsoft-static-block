@@ -3,7 +3,7 @@
 namespace Module\StaticBlock\Repositories\Eloquents;
 
 use Module\StaticBlock\Repositories\StaticBlockRepositoryInterface;
-use Dnsoft\Core\Repositories\BaseRepository;
+use DnSoft\Core\Repositories\BaseRepository;
 
 class StaticBlockRepository extends BaseRepository implements StaticBlockRepositoryInterface
 {

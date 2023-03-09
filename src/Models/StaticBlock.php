@@ -2,7 +2,7 @@
 
 namespace Module\StaticBlock\Models;
 
-use Dnsoft\Core\Traits\AttributeAndTranslatableTrait;
+use DnSoft\Core\Traits\AttributeAndTranslatableTrait;
 use Illuminate\Database\Eloquent\Model;
 // use Spatie\Activitylog\Traits\LogsActivity;
 

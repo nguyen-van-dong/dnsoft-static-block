@@ -2,13 +2,13 @@
 
 namespace Module\StaticBlock;
 
-use Dnsoft\Core\Support\BaseModuleServiceProvider;
+use DnSoft\Core\Support\BaseModuleServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Event;
 use Module\StaticBlock\Facade\StaticBlockRender;
 use Module\StaticBlock\Services\StaticBlockService;
-use Dnsoft\Acl\Facades\Permission;
-use Dnsoft\Core\Events\CoreAdminMenuRegistered;
+use DnSoft\Acl\Facades\Permission;
+use DnSoft\Core\Events\CoreAdminMenuRegistered;
 use Module\StaticBlock\Repositories\Eloquents\StaticBlockRepository;
 use Module\StaticBlock\Repositories\StaticBlockRepositoryInterface;
 use Module\StaticBlock\Models\StaticBlock;

@@ -8,38 +8,38 @@ use Illuminate\Database\Eloquent\Model;
 
 class StaticBlock extends Model
 {
-    use AttributeAndTranslatableTrait;
-    // use LogsActivity;
+  use AttributeAndTranslatableTrait;
+  // use LogsActivity;
 
-    // protected static $logName = 'static-block';
+  // protected static $logName = 'static-block';
 
-    protected $table = 'static_blocks';
+  protected $table = 'static_blocks';
 
-    protected $casts = [
-        'is_active' => 'boolean',
-    ];
+  protected $casts = [
+    'is_active' => 'boolean',
+  ];
 
-    protected $fillable = [
-        'name',
-        'slug',
-        'content',
-        'css',
-        'script',
-        'is_active',
-    ];
+  protected $fillable = [
+    'name',
+    'slug',
+    'content',
+    'css',
+    'script',
+    'is_active',
+  ];
 
-    protected $appends = ['render_code'];
+  protected $appends = ['render_code'];
 
-    public $translatable = [
-        'name',
-        'content'
-    ];
+  public $translatable = [
+    'name',
+    'content'
+  ];
 
-    /**
-     * @return string
-     */
-    public function getRenderCodeAttribute(): string
-    {
-       return '{!! \StaticBlockRender::render("'.$this->slug.'") !!}';
-    }
+  /**
+   * @return string
+   */
+  public function getRenderCodeAttribute(): string
+  {
+    return '{!! \StaticBlockRender::render("' . $this->slug . '") !!}';
+  }
 }

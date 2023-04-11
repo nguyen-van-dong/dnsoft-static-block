@@ -45,7 +45,7 @@ class StaticBlockServiceProvider extends BaseModuleServiceProvider
             $menu->add('Static Block', [
                 'route' => 'static-block.admin.static-block.index',
                 'parent' => $menu->content->id
-            ])->nickname('static_block_root')->data('order', 10);
+            ])->nickname('static_block_root')->data('order', 10)->prepend('<i class="fas fa-th-large"></i>');
         });
     }
 

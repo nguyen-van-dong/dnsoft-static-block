@@ -1,4 +1,4 @@
-@extends('core::admin.master')
+@extends('core::v1.admin.master')
 
 @section('meta_title', __('static-block::static-block.edit.page_title'))
 
@@ -14,7 +14,7 @@
                    </ol>
                 </div>
                 <h4 class="page-title">
-                    {{ __('static-block::static-block.index.page_title') }}
+                    {{ __('static-block::v1.static-block.index.page_title') }}
                 </h4>
             </div>
         </div>

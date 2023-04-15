@@ -77,7 +77,7 @@ class StaticBlockController extends Controller
     {
         $this->staticBlockRepository->delete($id);
 
-        if ($request->wantsJson()) {
+        if ($request->ajax()) {
             Session::flash('success', __('static-block::message.notification.deleted'));
             return response()->json([
                 'success' => true,

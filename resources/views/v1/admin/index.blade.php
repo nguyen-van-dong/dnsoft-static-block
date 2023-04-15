@@ -2,7 +2,7 @@
 
 @section('meta_title', __('static-block::static-block.index.page_title'))
 
-@section('content-header')
+@section('breadcrumbs')
     <div class="row">
         <div class="col-12">
             <div class="page-title-box">
@@ -87,7 +87,7 @@
                                         @endadmincan
 
                                         @admincan('static-block.admin.static-block.destroy')
-                                        <button-delete url-delete="{{ route('static-block.admin.static-block.destroy', $item->id) }}"></button-delete>
+                                        <x-button-delete-v1 url="{{ route('static-block.admin.static-block.destroy', $item->id) }}"/>
                                         @endadmincan
                                     </td>
                                 </tr>

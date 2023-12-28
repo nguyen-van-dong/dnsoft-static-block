@@ -1,4 +1,4 @@
-@extends('core::v1.admin.master')
+@extends('core::admin.master')
 
 @section('meta_title', __('static-block::static-block.create.page_title'))
 
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="card-body">
-                @include('static-block::v1.admin._fields', ['item' => $item])
+                @include('static-block::admin._fields', ['item' => $item])
             </div>
             <div class="card-footer text-right">
                 <div class="btn-group">
